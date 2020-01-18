@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>A1E1D5DE-C28B-4998-AFFE-A999456CE7F0@1.5x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="51" height="51" rx="25.5"></rect>
+        <filter x="-29.4%" y="-17.6%" width="158.8%" height="158.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="3" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="6" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service-Page_1" transform="translate(-529.000000, -745.000000)">
+            <g id="Play" transform="translate(537.000000, 747.000000)">
+                <g id="Rectangle-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#7DB442" stroke-width="3" stroke-linejoin="square" x="1.5" y="1.5" width="48" height="48" rx="24"></rect>
+                </g>
+                <path d="M32.342,26.7017892 L21.142,33.784852 C20.915375,33.9280184 20.6576875,34 20.4,34 C20.16655,34 19.93275,33.9412106 19.721175,33.8222151 C19.27615,33.5725372 19,33.0986803 19,32.5833874 L19,18.4172619 C19,17.9019691 19.27615,17.4281122 19.721175,17.1784342 C20.1662,16.9273397 20.7103625,16.9425682 21.142,17.2157974 L32.342,24.2988602 C32.75115,24.5582773 33,25.012036 33,25.5003247 C33,25.9886133 32.75115,26.4424606 32.342,26.7017892" id="Fill-1" fill="#D1A53C"></path>
+            </g>
+        </g>
+    </g>
+</svg>

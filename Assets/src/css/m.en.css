@@ -1,0 +1,346 @@
+h3.title-section {
+    text-align: left;
+}
+
+.definition{
+	border-right: none;
+	padding-right: 0px;
+
+	border-left: 1px solid #E7AF2C;
+	padding-left: 20px;
+}
+
+.sw-main .sw-container{
+	direction: ltr;
+}
+.sw-main .sw-container .container {
+	direction:ltr;
+	text-align: left;
+}
+
+h3.title-collapsible{
+	text-align: left;
+}
+
+/* Wizard */
+.wizard-services{
+	direction: ltr;
+}
+
+.wizard > .actions {
+    text-align: right !important;
+}
+
+.wizard > .actions > ul {
+    text-align: right !important;
+}
+
+.wizard > .content > .body {
+    float: left !important;
+}
+
+	.wizard > .actions > ul > li {
+		float: left !important;
+	}
+
+ul.entities-list li{
+	padding-right: 0px !important;
+	padding-left: 20px !important;
+}
+
+ul.entities-list li .fa{
+	padding-left: 0px;
+	padding-right: 5px;
+}
+
+ul.entities-list li a{
+	padding-right: 0px;
+	padding-left: 20px;
+}
+
+.datepicker-dropdown {
+    right: inherit !important;
+}
+
+.datepicker-dropdown.datepicker-orient-left:before {
+    left: 6px !important;
+	right: inherit !important;
+}
+
+.datepicker-dropdown.datepicker-orient-left:after {
+    left: 7px !important;
+	right: inherit !important;
+}
+
+a.inputfile-delete i{
+    padding-right: 5px;
+    padding-left: 0px;
+}
+
+
+.star-required{
+	padding-left:5px;
+	padding-right:0px;
+}
+
+.actions-bar{
+	text-align:right;
+}
+
+.jconfirm-buttons .btn {
+    margin-left: 0px !important;
+    margin-right: 10px !important;
+}
+
+/*trying to make wizard look better on phones*/
+        ul.entities-list li {
+            padding-right: 0px !important;
+            padding-left: 20px !important;
+        }
+
+            ul.entities-list li .fa {
+                padding-left: 0px;
+                padding-right: 5px;
+            }
+
+            ul.entities-list li a {
+                padding-right: 0px;
+                padding-left: 20px;
+            }
+
+                ul.entities-list li a .fa {
+                    padding-left: 0px;
+                    padding-right: 5px;
+                }
+    .datepicker-dropdown {
+        right: inherit !important;
+    }
+
+        .datepicker-dropdown.datepicker-orient-left:before {
+            left: 6px !important;
+            right: inherit !important;
+        }
+
+        .datepicker-dropdown.datepicker-orient-left:after {
+            left: 7px !important;
+            right: inherit !important;
+        }
+
+        a.inputfile-delete i {
+            padding-left: 0px;
+            padding-right: 5px;
+        }
+
+
+    .star-required {
+        padding-right: 0px;
+        padding-left: 5px;
+    }
+
+    .actions-bar {
+        text-align: right;
+    }
+
+    .datepicker div table {
+        direction: ltr;
+    }
+
+.form-control.inputmask {
+    direction: ltr;
+    text-align: left;
+}
+
+.md-accordion .card .fa-angle-down {
+    float: left !important;
+    padding-left: 0px !important;
+    padding-right: 15px !important;
+}
+
+.md-accordion .card .card-header a:not(.collapsed) .rotate-icon {
+    padding-left: 15px !important;
+    padding-right: 0px !important;
+}
+
+.btn.btn-secondary{
+	 background-image: linear-gradient(86deg, #008d8b, #063637) !important;
+	 font-family:'DroidArabicKufi', 'DroidSans', sans-serif;
+	 font-size:16px
+}
+
+.btn.btn-secondary:hover{
+	 background-image: linear-gradient(86deg, #063637, #008d8b) !important;
+}
+
+/* select2 and input-group */
+.input-group > div > .select2.select2-container > .selection > .select2-selection {
+    border-left: 0;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.input-group > div.prepend > .select2.select2-container > .selection > .select2-selection {
+    border-right: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 3px 0px 0px 3px;
+}
+
+.input-group > div.prepend {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+
+.input-group > .btn {
+    border-left: 0;
+    border-radius: 0 3px 3px 0;
+    margin: 0;
+    font-size: 13px !important;
+}
+
+
+/* Select */
+.select-wrapper.mdb-select-form input.select-dropdown {
+    padding-right: 0px;
+}
+
+.select-wrapper.mdb-select-form span.caret {
+    right: 0.6rem;
+    left: auto;
+}
+
+.mdb-select-form.md-form label {
+    left: 0rem;
+    right: auto;
+}
+
+.mdb-select-form .form-check-input[type="checkbox"]+label:before,
+.mdb-select-form .form-check-input[type="checkbox"]:not(.filled-in)+label:after,
+.mdb-select-form label.btn input[type="checkbox"]+label:before,
+.mdb-select-form label.btn input[type="checkbox"]:not(.filled-in)+label:after {
+    left: 5px;
+    right: auto;
+}
+
+.mdb-select-form.select-wrapper .form-check-input[type="checkbox"]:checked+label:before,
+.mdb-select-form.select-wrapper label.btn input[type="checkbox"]:checked+label:before {
+    left: 5px;
+    right: auto;
+}
+
+/* Select SAME ID */
+.performers-chart .select-wrapper input.select-dropdown {
+    padding-right: 0px;
+}
+
+.performers-chart .select-wrapper span.caret {
+    right: 0.6rem;
+    left: auto;
+}
+
+.performers-chart .md-form label {
+    left: 0rem;
+    right: auto;
+}
+
+.performers-chart .form-check-input[type="checkbox"]+label:before,
+.performers-chart .form-check-input[type="checkbox"]:not(.filled-in)+label:after,
+.performers-chart label.btn input[type="checkbox"]+label:before,
+.performers-chart label.btn input[type="checkbox"]:not(.filled-in)+label:after {
+    left: 5px;
+    right: auto;
+}
+
+.performers-chart .select-wrapper .form-check-input[type="checkbox"]:checked+label:before,
+.performers-chart select-wrapper label.btn input[type="checkbox"]:checked+label:before {
+    left: 5px;
+    right: auto;
+}
+
+.performers-chart .select-wrapper:before {
+    right: 10px;
+}
+
+/* #region form-accordion */
+.accordion.form-accordion .card .fa-angle-down {
+    float: left;
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+.accordion.form-accordion .card .card-header a:not(.collapsed) .rotate-icon {
+    transform: rotate(-180deg);
+    padding-right: 0px;
+    padding-left: 15px;
+}
+/* #endregion form-accordion */
+
+/* #region cards accordion */
+.cardsArea .mycard .accordion .card .fa-angle-down {
+    float: left;
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+.cardsArea .mycard .accordion .card .card-header a:not(.collapsed) .rotate-icon {
+    transform: rotate(-180deg);
+    padding-right: 0px;
+    padding-left: 15px;
+}
+/* #endregion cards accordion */
+
+/* #region card */
+.row .mycard .primary {
+    border-right: 1px solid #DFE6EC;
+}
+
+@media (max-width: 768px){
+    .row .mycard .primary {
+        border-bottom: 1px solid #DFE6EC;
+        border-right: none;
+    }
+}   
+.row .mycard .colpl {
+    padding-left: 1rem!important;
+} 
+@media (max-width: 768px){
+    .row .mycard .colpl {
+        padding-left: 0px !important;
+    } 
+
+} 
+/* #endregion card */
+
+/* wizard */
+.wizard > .steps > ul > li > a > .wizard-number::after {
+    /*margin-left: -22px;*/
+}
+
+.Search-group > div > .btn{
+    border-left: none;
+  }
+  
+.Search-group >.form-control{
+    border-right: none;
+}
+  @media (min-width: 766px) {
+    .instruction-border {
+      border-left: 1px solid #dee2e6;
+    }
+  }
+
+/* #region filter-accordion */
+.accordion.filter-accordion .card .fa-angle-down,
+.accordion.filter-master-accordion > .card > .fa-angle-down {
+    float: right;
+    padding-right: 0px;
+    padding-left: 15px;
+}
+
+.accordion.filter-accordion .card .card-header a:not(.collapsed) .rotate-icon,
+.accordion.filter-master-accordion > .card > .card-header a:not(.collapsed) .rotate-icon {
+    transform: rotate(-180deg);
+    padding-right: 15px;
+    padding-left: 0px;
+}
+/* #endregion filter-accordion */

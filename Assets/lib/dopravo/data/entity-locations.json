@@ -1,0 +1,62 @@
+{
+    "agencies": [
+        {
+            "id": 1,
+            "nameEnglish": "وزارات",
+            "nameArabic": "وزارات"
+        },
+        {
+            "id": 2,
+            "nameEnglish": "هيئات",
+            "nameArabic": "هيئات"
+        },
+        {
+            "id": 3,
+            "nameEnglish": "مديريات",
+            "nameArabic": "مديريات"
+        },
+        {
+            "id": 4,
+            "nameEnglish": "مؤسسات",
+            "nameArabic": "مؤسسات"
+        }
+    ],
+    "locations": [
+        {
+            "ID": 1,
+            "EntityLogo": "gop.jpg",
+            "EntityNameArabic": "e-Government Program (Yesser)",
+            "EntityNameEnglish": "e-Government Program (Yesser)",
+            "agencyID": 1,
+            "lat": 24.74878,
+            "lng": 46.688429
+        },
+        {
+            "ID": 2,
+            "EntityLogo": "gop.jpg",
+            "EntityNameArabic": "The General Presidency of Islamic Research and Ifta",
+            "EntityNameEnglish": "The General Presidency of Islamic Research and Ifta",
+            "agencyID": 4,
+            "lat": 24.616404,
+            "lng": 46.705241
+        },
+        {
+            "ID": 3,
+            "EntityLogo": "gop.jpg",
+            "EntityNameArabic": "Takaful Foundation",
+            "EntityNameEnglish": "Takaful Foundation",
+            "agencyID": 2,
+            "lat": 24.828205,
+            "lng": 46.638788
+        },
+        {
+            "ID": 4,
+            "EntityLogo": "gop.jpg",
+            "EntityNameArabic": "Saudi Post",
+            "EntityNameEnglish": "Saudi Post",
+            "agencyID": 2,
+            "lat": 24.649736,
+            "lng": 46.717323
+        }
+    ]
+}

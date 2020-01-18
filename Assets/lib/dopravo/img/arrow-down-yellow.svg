@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>FD7986E1-B7B2-4AAA-AA3D-4CB340642DD1@1.5x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <radialGradient cx="92.3872425%" cy="50.1439546%" fx="92.3872425%" fy="50.1439546%" r="84.2543521%" id="radialGradient-1">
+            <stop stop-color="#F7C859" offset="0%"></stop>
+            <stop stop-color="#E4AB25" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contact" transform="translate(-1128.000000, -479.000000)">
+            <g id="Group-8" transform="translate(1128.000000, 479.000000)">
+                <circle id="Oval" fill="url(#radialGradient-1)" cx="22.5" cy="22.5" r="22.5"></circle>
+                <path d="M29.7819482,25.1464275 C30.0726839,24.8502371 30.0726839,24.3839373 29.7819482,24.0877469 C29.4810468,23.8015629 28.9964872,23.8015629 28.7064292,24.0877469 L23.2529311,29.4558645 L23.2529311,11.7411431 C23.2529311,11.328211 22.9194999,11 22.5,11 C22.0805001,11 21.7362256,11.328211 21.7362256,11.7411431 L21.7362256,29.4558645 L16.2935708,24.0877469 C15.9926695,23.8015629 15.5189532,23.8015629 15.2180518,24.0877469 C14.9273161,24.3839373 14.9273161,24.8502371 15.2180518,25.1464275 L21.9625793,31.785362 C22.2533151,32.071546 22.737197,32.071546 23.0380984,31.785362 L29.7819482,25.1464275 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

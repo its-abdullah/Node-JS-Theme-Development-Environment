@@ -1,0 +1,318 @@
+﻿h3.title-section {
+    text-align: right;
+}
+
+.definition{
+	border-right: 1px solid #E7AF2C;
+	padding-right: 20px;
+}
+
+.sw-main .sw-container{
+	direction: rtl;
+}
+.sw-main .sw-container .container {
+	direction:rtl;
+	text-align: right;
+}
+
+h3.title-collapsible{
+	text-align:right;
+}
+
+/* Wizard */
+.wizard-services{
+	direction: rtl;
+}
+
+.wizard > .actions {
+    text-align: left !important;
+}
+
+.wizard > .actions > ul {
+    text-align: left !important;
+}
+
+.wizard > .content > .body {
+    float: right !important;
+}
+
+	.wizard > .actions > ul > li {
+		float: right !important;
+	}
+
+ul.entities-list li{
+	padding-right: 20px !important;
+}
+
+ul.entities-list li .fa{
+	padding-left: 5px;
+}
+
+ul.entities-list li a{
+	padding-right: 20px;
+}
+
+.datepicker-dropdown {
+    left: inherit !important;
+}
+
+.datepicker-dropdown.datepicker-orient-left:before {
+    right: 6px !important;
+	left: inherit !important;
+}
+
+.datepicker-dropdown.datepicker-orient-left:after {
+    right: 7px !important;
+	left: inherit !important;
+}
+
+a.inputfile-delete i{
+    padding-left: 5px;
+}
+
+
+.star-required{
+	padding-right:5px;
+}
+
+.actions-bar{
+	text-align:left;
+}
+
+.jconfirm-buttons .btn {
+    margin-left: 10px !important;
+}
+
+/*trying to make wizard look better on phones*/
+        ul.entities-list li {
+            padding-right: 20px !important;
+        }
+
+            ul.entities-list li .fa {
+                padding-left: 5px;
+            }
+
+            ul.entities-list li a {
+                padding-right: 20px;
+            }
+
+                ul.entities-list li a .fa {
+                    padding-left: 5px;
+                }
+    .datepicker-dropdown {
+        left: inherit !important;
+    }
+
+        .datepicker-dropdown.datepicker-orient-left:before {
+            right: 6px !important;
+            left: inherit !important;
+        }
+
+        .datepicker-dropdown.datepicker-orient-left:after {
+            right: 7px !important;
+            left: inherit !important;
+        }
+
+        a.inputfile-delete i {
+            padding-left: 5px;
+        }
+
+
+    .star-required {
+        padding-right: 5px;
+    }
+
+    .actions-bar {
+        text-align: left;
+    }
+
+    .datepicker div table {
+        direction: ltr
+    }
+
+.form-control.inputmask {
+    direction: ltr;
+    text-align: right;
+}
+
+/* select2 and input-group */
+.input-group > div > .select2.select2-container > .selection > .select2-selection {
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.input-group > div.prepend > .select2.select2-container > .selection > .select2-selection {
+    border-left: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0px 3px 3px 0px;
+}
+
+.input-group > div.prepend {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+
+.input-group > .btn {
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    margin: 0;
+    font-size: 13px !important;
+}
+
+
+/* Select */
+.select-wrapper.mdb-select-form input.select-dropdown {
+    padding-left: 0px;
+}
+
+.select-wrapper.mdb-select-form span.caret {
+    left: 0.6rem;
+}
+
+.mdb-select-form.md-form label {
+    right: 0rem;
+}
+
+.mdb-select-form .form-check-input[type="checkbox"]+label:before,
+.mdb-select-form .form-check-input[type="checkbox"]:not(.filled-in)+label:after,
+.mdb-select-form label.btn input[type="checkbox"]+label:before,
+.mdb-select-form label.btn input[type="checkbox"]:not(.filled-in)+label:after {
+    right: 5px;
+    left: auto;
+}
+
+.mdb-select-form.select-wrapper .form-check-input[type="checkbox"]:checked+label:before,
+.mdb-select-form.select-wrapper label.btn input[type="checkbox"]:checked+label:before {
+    right: 15px;
+    left: auto;
+}
+
+/* Select SAME ID */
+.performers-chart .select-wrapper input.select-dropdown {
+    padding-left: 0px;
+}
+
+.select-wrapper span.caret {
+    left: 0.6rem;
+}
+
+.performers-chart .md-form label {
+    right: 0rem;
+}
+
+.performers-chart .form-check-input[type="checkbox"]+label:before,
+.performers-chart .form-check-input[type="checkbox"]:not(.filled-in)+label:after,
+.performers-chart label.btn input[type="checkbox"]+label:before,
+.performers-chart label.btn input[type="checkbox"]:not(.filled-in)+label:after {
+    right: 5px;
+    left: auto;
+}
+
+.performers-chart .select-wrapper .form-check-input[type="checkbox"]:checked+label:before,
+.performers-chart .select-wrapper label.btn input[type="checkbox"]:checked+label:before {
+    right: 15px;
+    left: auto;
+}
+
+.performers-chart .select-wrapper:before {
+    left: 10px;
+}
+
+/* #region datePicker and dateTimePicker */
+.form-control.DateTimePicker-Gregorian,
+.form-control.DateTimePicker-Hijri,
+.form-control.DatePicker-Gregorian,
+.form-control.DateTimePicker-Hijri {
+    direction: ltr;
+    text-align: right;
+}
+/* #endregion datePicker and dateTimePicker */
+
+/* #region form-accordion */
+.accordion.form-accordion .card .fa-angle-down {
+    float: right;
+    padding-right: 0px;
+    padding-left: 15px;
+}
+
+.accordion.form-accordion .card .card-header a:not(.collapsed) .rotate-icon {
+    transform: rotate(-180deg);
+    padding-right: 15px;
+    padding-left: 0px;
+}
+/* #endregion form-accordion */
+
+/* #region cards accordion */
+.cardsArea .mycard .accordion .card .fa-angle-down {
+    float: right;
+    padding-right: 0px;
+    padding-left: 15px;
+}
+
+.cardsArea .mycard .accordion .card .card-header a:not(.collapsed) .rotate-icon {
+    transform: rotate(-180deg);
+    padding-right: 15px;
+    padding-left: 0px;
+}
+/* #endregion cards accordion */
+
+/* #region card */
+.row .mycard .primary {
+    border-left: 1px solid #DFE6EC;
+    padding: 0;
+}
+
+@media (max-width: 768px){
+    .row .mycard .primary {
+        border-bottom: 1px solid #DFE6EC;
+        border-left: none;
+    } 
+}  
+.row .mycard .colpl {
+    padding-right: 1rem!important;
+} 
+@media (max-width: 768px){
+    .row .mycard .colpl {
+        padding-right: 0px !important;
+    } 
+
+}  
+/* #endregion card */
+
+/* wizard */
+.wizard > .steps > ul > li > a > .wizard-number::after {
+    /*margin-right: -22px;*/
+}
+
+.Search-group > div > .btn {
+    border-right: none;
+  }
+  
+   .Search-group >.form-control {
+    border-left: none;
+  }
+  
+@media (min-width: 766px) {
+    .instruction-border {
+      border-right: 1px solid #dee2e6;
+    }
+  }
+
+/* #region filter-accordion */
+.accordion.filter-accordion .card .fa-angle-down,
+.accordion.filter-master-accordion > .card > .fa-angle-down {
+    float: right;
+    padding-right: 0px;
+    padding-left: 15px;
+}
+
+.accordion.filter-accordion .card .card-header a:not(.collapsed) .rotate-icon,
+.accordion.filter-master-accordion > .card > .card-header a:not(.collapsed) .rotate-icon {
+    transform: rotate(-180deg);
+    padding-right: 15px;
+    padding-left: 0px;
+}
+/* #endregion filter-accordion */

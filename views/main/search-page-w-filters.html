@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/" />
+    <title>Search Result | National Portal - Saudi</title>
+    <link rel="icon" sizes="16x16 32x32 64x64 192x192" href="/assets/img/faviconx2.png" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/faviconx2.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="/dist/css/en.min.css">
+    <link rel="stylesheet" href="/assets/css/style.en.css">
+    <link rel="stylesheet" href="/servicesResources/css/m.css">
+    <link rel="stylesheet" href="/servicesResources/css/m.en.css">
+    <!--<link rel="stylesheet" href="/assets/css/ar.css">-->
+    <!--todo: what's the eng of this?-->
+</head>
+
+<body>
+    <div class="ribbon wow fadeIn" data-wow-delay="0.2s"><span>Beta version</span></div>
+    <header class="wow fadeIn" data-wow-delay="0.2s">
+        <nav class="navbar navbar-expand-lg navbar-dark z-depth-1">
+            <a class="navbar-brand" href="/en/">
+                <img src="../assets/img/logo.svg" alt="Saudi Gov" class="img-fluid" width="118" />
+            </a>
+            <button class="hamburger hamburger--spring js-hamburger" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse ml-3" id="navbarSupportedContent">
+                <ul class="navbar-nav my-nav mr-auto">
+                    <li class="nav-item px-3 has-sub">
+                        <a class="nav-link" href="/en/about/index.html">About Saudi</a>
+                        <ul>
+                            <li><a href='/en/about/e-services.html'><span>On e-government transactions</span></a></li>
+                            <li><a href='/en/about/e-governance.html'><span>E-governance</span></a></li>
+                            <li><a href='/en/about/services.html'><span>Services</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="/en/service-directories/index.html">Services Directory</a>
+                    </li>
+                    <li class="nav-item px-3 has-sub">
+                        <a class="nav-link" href="/en/about-kingdom/index.html">About Kingdom</a>
+                        <ul>
+                            <li><a href="/en/about-kingdom/news/index.html"><span>News</span></a></li>
+                            <li><a href="/en/about-kingdom/events/index.html"><span>Events</span></a></li>
+                            <li>
+                                <a href="/en/about-kingdom/directory/index.html">
+                                    <span>
+                                        Directory of regulations and
+                                        regulations
+                                    </span>
+                                </a>
+                            </li>
+                            <li><a href="/en/about-kingdom/institutions/index.html"><span>Institutions
+                                        Directory</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/en/contact/index.html">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-flex-icons pos-rel">
+                    <li class="nav-item">
+                        <a class="nav-link mr-3" onclick="showSearch(event)"><i class="fa fa-search"></i></a>
+                        <div id="header-search">
+                            <input type="text" placeholder="Search" onkeyup="hitSearchContainer(event)" />
+                        </div>
+                    </li>
+                    <li class="nav-item lang-tog">
+                        <a class="nav-link mr-4 ml-2">عربي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/en/profile/personal-profile.html" class="nav-link btn-yellow mr-3 absher-login-icon">
+                            Log
+                            in with Messenger
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a class="nav-link v-2030-logo">
+                <img src="../assets/img/vision-2030.svg" alt="Vision 2030" class="img-fluid" width="84" />
+            </a>
+        </nav>
+    </header>
+
+    <section id="breadcrumb">
+        <div class="container wow fadeIn" data-wow-delay="0.2s">
+            <div class="row">
+                <ol class="breadcrumb col-lg-9 col-md-6 lighten-4 bg-transparent">
+                    <li><a href="#">Home</a><i class="fa fa-angle-right mx-2" aria-hidden="true"></i></li>
+                    <li><a href="#">Services</a><i class="fa fa-angle-right mx-2" aria-hidden="true"></i></li>
+                    <li class="active">Search Result</li>
+                </ol>
+                <ul class="list-unstyled list-inline col-lg-3 col-md-6 d-flex justify-content-end">
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-sm bg-gray1 z-depth-0 mx-0" href>
+                            <i class="fa fa-volume-up" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a onclick="setScale()" class="btn-floating bg-gray1 btn-sm z-depth-0 mx-0"><i
+                                class="fa fa-search-plus minus" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <main id="page-contents">
+        <section class="intro-contents">
+            <div class="container wow fadeIn" data-wow-delay="0.2s" id="corForm">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="bg-white p-5 mt-5 mb-3">
+                            <div class="row search-textbox">
+                                <h2 class="col-md-12 mb-3">Search Results For </h2>
+                                <div class="col-md-12 mb-4">
+                                    <div class="Search-group input-group">
+                                        <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn no-waves" type="button"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                    <label>23 results found</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- #Filters -->
+                                <div class="search-filters mb-3">
+                                    <!-- <div class="filter-header clearfix">
+                                        <h3 class="filter-label mb-2">Filter By</h3>
+                                        <a class="clear-filter btn no-waves">Clear All</a>
+                                    </div> -->
+                                    <div class="accordion filter-master-accordion">
+                                        <div class="card">
+                                            <div class="card-header" id="headingOne">
+                                                    <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                            <h3 class="filter-label mb-2">Filter By</h3><i class="fa fa-angle-down rotate-icon"></i>
+                                                    </button>
+                                                    <a class="clear-filter btn no-waves">Clear All</a>
+                                            </div>
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                                                <div class="card-body">
+                                                    <div class="accordion filter-accordion" role="tablist"
+                                                        aria-multiselectable="true">
+                                                        <div class="card">
+                                                            <div class="card-header" role="tab" id="headingOne1">
+                                                                <a class="collapsed" data-toggle="collapse"
+                                                                    data-parent="" href="#collapseOne1"
+                                                                    aria-expanded="false" aria-controls="collapseOne1">
+                                                                    <h3 class="title-collapsible">
+                                                                        Organization
+                                                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                                                        <div class="br-section-text">
+                                                                            <small class="number">0</small>
+                                                                            <small> Selected</small>
+                                                                        </div>
+                                                                    </h3>
+                                                                </a>
+                                                            </div>
+                                                            <div id="collapseOne1" class="collapse" role="tabpanel"
+                                                                aria-labelledby="headingOne1" data-parent="">
+                                                                <div class="card-body">
+                                                                    <div class="filter-searchbox">
+                                                                        <input class="form-control"
+                                                                            placeholder="Search">
+                                                                    </div>
+                                                                    <div class="filter-checkboxes">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb11"
+                                                                                name="grp1" ChechkBoxValue="1">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb11">hello</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb12"
+                                                                                name="grp1" ChechkBoxValue="2">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb12">this is just a long text, it
+                                                                                meant to be a
+                                                                                long one</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb13"
+                                                                                name="grp1" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb13">welp</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb14"
+                                                                                name="grp1" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb14">this is a one with common
+                                                                                text</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb15"
+                                                                                name="grp1" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb15">hi</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb16"
+                                                                                name="grp1" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb16">Organization6</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb17"
+                                                                                name="grp1" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb16">Organization7</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb18"
+                                                                                name="grp1" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb16">Organization8</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb19"
+                                                                                name="grp1" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb16">Organization9</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="no-filters" style="display: none;">
+                                                                        <p class="text-center">No Filter Found</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion filter-accordion" role="tablist"
+                                                        aria-multiselectable="true">
+                                                        <div class="card">
+                                                            <div class="card-header" role="tab" id="headingOne4">
+                                                                <a class="collapsed" data-toggle="collapse"
+                                                                    data-parent="" href="#collapseOne4"
+                                                                    aria-expanded="false" aria-controls="collapseOne4">
+                                                                    <h3 class="title-collapsible">
+                                                                        Organization
+                                                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                                                        <div class="br-section-text">
+                                                                            <small class="number">0</small>
+                                                                            <small> Selected</small>
+                                                                        </div>
+                                                                    </h3>
+                                                                </a>
+                                                            </div>
+                                                            <div id="collapseOne4" class="collapse" role="tabpanel"
+                                                                aria-labelledby="headingOne4" data-parent="">
+                                                                <div class="card-body">
+                                                                    <div class="filter-checkboxes">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb21"
+                                                                                name="grp2" ChechkBoxValue="1">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb21">hello</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb22"
+                                                                                name="grp2" ChechkBoxValue="2">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb22">this is just a long text, it
+                                                                                meant to be a
+                                                                                long one</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb23"
+                                                                                name="grp2" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb23">welp</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb24"
+                                                                                name="grp2" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb24">this is a one with common
+                                                                                text</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb25"
+                                                                                name="grp2" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb25">hi</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb26"
+                                                                                name="grp2" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb26">Organization6</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb27"
+                                                                                name="grp2" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb26">Organization7</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb28"
+                                                                                name="grp2" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb26">Organization8</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb29"
+                                                                                name="grp2" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb26">Organization9</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="no-filters" style="display: none;">
+                                                                        <p class="text-center">No Filter Found</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion filter-accordion" role="tablist"
+                                                        aria-multiselectable="true">
+                                                        <div class="card">
+                                                            <div class="card-header" role="tab" id="headingOne3">
+                                                                <a class="collapsed" data-toggle="collapse"
+                                                                    data-parent="" href="#collapseOne3"
+                                                                    aria-expanded="false" aria-controls="collapseOne3">
+                                                                    <h3 class="title-collapsible">
+                                                                        Organization
+                                                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                                                        <div class="br-section-text">
+                                                                            <small class="number">0</small>
+                                                                            <small> Selected</small>
+                                                                        </div>
+                                                                    </h3>
+                                                                </a>
+                                                            </div>
+                                                            <div id="collapseOne3" class="collapse" role="tabpanel"
+                                                                aria-labelledby="headingOne3" data-parent="">
+                                                                <div class="card-body">
+                                                                    <div class="filter-checkboxes">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb31"
+                                                                                name="grp3" ChechkBoxValue="1">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb31">hello</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb32"
+                                                                                name="grp3" ChechkBoxValue="2">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb32">this is just a long text, it
+                                                                                meant to be a
+                                                                                long one</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb33"
+                                                                                name="grp3" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb33">welp</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb34"
+                                                                                name="grp3" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb34">this is a one with common
+                                                                                text</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb35"
+                                                                                name="grp3" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb35">hi</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb36"
+                                                                                name="grp3" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb36">Organization6</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb37"
+                                                                                name="grp3" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb36">Organization7</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb38"
+                                                                                name="grp3" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb36">Organization8</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox"
+                                                                                class="custom-control-input" id="cb39"
+                                                                                name="grp3" ChechkBoxValue="3">
+                                                                            <label class="custom-control-label"
+                                                                                for="cb36">Organization9</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="no-filters" style="display: none;">
+                                                                        <p class="text-center">No Filter Found</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- #Filters -->
+
+                                <!-- #Result -->
+                                <div class="search-result mb-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="card-title"><a href="#">search result</a></h3>
+                                                <p class="card-text">In computer science, a search algorithm is any
+                                                    algorithm which solves the search problem, namely, to retrieve
+                                                    information stored within some data structure, or calculated in the
+                                                    search space of a problem domain, either with discrete or continuous
+                                                    values. Search algorithms can be classified based on their mechanism
+                                                    of searching. Linear search algorithms check every record for the
+                                                    one associated with a target key in a linear fashion. Binary, or
+                                                    half interval searches, repeatedly target the center of the search
+                                                    structure and divide the search space in half. Comparison search
+                                                    algorithms improve on linear searching by successively eliminating
+                                                    records based on comparisons of the keys until the target record is
+                                                    found, and can be applied on data structures with a defined order.
+                                                    Digital search algorithms work based on the properties of digits in
+                                                    data structures that use numerical keys. Finally, hashing directly
+                                                    maps keys to records based on a hash function. Searches outside a
+                                                    linear search require that the data be sorted in some way.</p>
+                                                <p class="card-tags">[tag1] [tag2] [tag3]</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="card-title"><a href="#">search result</a></h3>
+                                                <p class="card-text">In computer science, a search algorithm is any
+                                                    algorithm which solves the search problem, namely, to retrieve
+                                                    information stored within some data structure, or calculated in the
+                                                    search space of a problem domain, either with discrete or continuous
+                                                    values. Search algorithms can be classified based on their mechanism
+                                                    of searching. Linear search algorithms check every record for the
+                                                    one associated with a target key in a linear fashion. Binary, or
+                                                    half interval searches, repeatedly target the center of the search
+                                                    structure and divide the search space in half. Comparison search
+                                                    algorithms improve on linear searching by successively eliminating
+                                                    records based on comparisons of the keys until the target record is
+                                                    found, and can be applied on data structures with a defined order.
+                                                    Digital search algorithms work based on the properties of digits in
+                                                    data structures that use numerical keys. Finally, hashing directly
+                                                    maps keys to records based on a hash function. Searches outside a
+                                                    linear search require that the data be sorted in some way.</p>
+                                                <p class="card-tags">[tag1] [tag2] [tag3]</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="card-title"><a href="#">search result</a></h3>
+                                                <p class="card-text">In computer science, a search algorithm is any
+                                                    algorithm which solves the search problem, namely, to retrieve
+                                                    information stored within some data structure, or calculated in the
+                                                    search space of a problem domain, either with discrete or continuous
+                                                    values. Search algorithms can be classified based on their mechanism
+                                                    of searching. Linear search algorithms check every record for the
+                                                    one associated with a target key in a linear fashion. Binary, or
+                                                    half interval searches, repeatedly target the center of the search
+                                                    structure and divide the search space in half. Comparison search
+                                                    algorithms improve on linear searching by successively eliminating
+                                                    records based on comparisons of the keys until the target record is
+                                                    found, and can be applied on data structures with a defined order.
+                                                    Digital search algorithms work based on the properties of digits in
+                                                    data structures that use numerical keys. Finally, hashing directly
+                                                    maps keys to records based on a hash function. Searches outside a
+                                                    linear search require that the data be sorted in some way.</p>
+                                                <p class="card-tags">[tag1] [tag2] [tag3]</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="card-title"><a href="#">search result</a></h3>
+                                                <p class="card-text">In computer science, a search algorithm is any
+                                                    algorithm which solves the search problem, namely, to retrieve
+                                                    information stored within some data structure, or calculated in the
+                                                    search space of a problem domain, either with discrete or continuous
+                                                    values. Search algorithms can be classified based on their mechanism
+                                                    of searching. Linear search algorithms check every record for the
+                                                    one associated with a target key in a linear fashion. Binary, or
+                                                    half interval searches, repeatedly target the center of the search
+                                                    structure and divide the search space in half. Comparison search
+                                                    algorithms improve on linear searching by successively eliminating
+                                                    records based on comparisons of the keys until the target record is
+                                                    found, and can be applied on data structures with a defined order.
+                                                    Digital search algorithms work based on the properties of digits in
+                                                    data structures that use numerical keys. Finally, hashing directly
+                                                    maps keys to records based on a hash function. Searches outside a
+                                                    linear search require that the data be sorted in some way.</p>
+                                                <p class="card-tags">[tag1] [tag2] [tag3]</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- #Result -->
+
+                                <!-- #Pagination -->
+                                <div class="col-md-12">
+                                    <div id="pagination">
+                                        <nav aria-label="pagination example">
+                                            <ul
+                                                class="pagination justify-content-center pagination-circle pg-yellow3 mb-0">
+                                                <!--Arrow left-->
+                                                <li class="page-item disabled">
+                                                    <a class="page-link page-link-arrow" aria-label="Previous">
+                                                        <span class="arrow-white arrow-gray4 perv"
+                                                            aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                </li>
+                                                <!--Numbers-->
+                                                <li class="page-item"><a class="page-link">1</a></li>
+                                                <li class="page-item active"><a class="page-link">2</a></li>
+                                                <li class="page-item"><a class="page-link">3</a></li>
+                                                <li class="page-item"><a class="page-link">4</a></li>
+                                                <!--Arrow right-->
+                                                <li class="page-item">
+                                                    <a class="page-link page-link-arrow" aria-label="Next">
+                                                        <span class="arrow-white arrow-gray4" aria-hidden="true"></span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <!-- #Pagination -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer font-small bg-white pt-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left mt-3 pb-3">
+                <div class="col-md-6 col-lg-3 col-xl-3 mt-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="d-flex">
+                        <a href="/en/"><img src="/assets/img/footer-logo.svg" alt="" width="145" class="mb-4" /></a>
+                        <a class="v-2030-logo d-none col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img src="../assets/img/vision-2030x2.png" alt="Vision 2030" class="img-fluid" width="84" />
+                        </a>
+                    </div>
+                    <h6 class="text-uppercase text-green mt-4 font-weight-bold">Follow us on</h6>
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-sm btn-fb rgba-white-slight mx-0">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-sm btn-li rgba-white-slight mx-0">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-sm btn-tw rgba-white-slight mx-0">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-sm btn-yt rgba-white-slight mx-0">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="w-100 clearfix d-md-none">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 wow fadeIn f-sitemap" data-wow-delay="0.3s">
+                    <h6 class="text-uppercase mb-4 font-weight-bold"><a href="/en/about/index.html">About Saudi</a></h6>
+                    <p>
+                        <a href='/en/about/e-services.html'><span>On e-government transactions</span></a>
+                    </p>
+                    <p>
+                        <a href='/en/about/e-governance.html'><span>E-governance</span></a>
+                    </p>
+                    <p>
+                        <a href='/en/about/services.html'><span>Services</span></a>
+                    </p>
+                </div>
+                <hr class="w-100 clearfix d-md-none">
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 wow fadeIn f-sitemap" data-wow-delay="0.3s">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        <a href="/en/about-kingdom/index.html">
+                            About
+                            Kingdom
+                        </a>
+                    </h6>
+                    <p>
+                        <a href="/en/about-kingdom/news/index.html"><span>News</span></a>
+                    </p>
+                    <p>
+                        <a href="/en/about-kingdom/events/index.html"><span>Events</span></a>
+                    </p>
+                    <p>
+                        <a href="/en/about-kingdom/directory/index.html"><span>Directory of regulations and
+                                regulations</span></a>
+                    </p>
+                    <p>
+                        <a href="/en/about-kingdom/institutions/index.html"><span>Institutions Directory</span></a>
+                    </p>
+                </div>
+                <hr class="w-100 clearfix d-md-none">
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 wow fadeIn f-sitemap" data-wow-delay="0.3s">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        <a href="/en/service-directories/index.html">Service Directory</a>
+                    </h6>
+                    <h6 class="text-uppercase mb-4 font-weight-bold"><a href="/en/contact/index.html">Contact</a></h6>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <section id="copyright" class="bg-gray wow fadeIn" data-wow-delay="0.3s">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12"><span>&copy;</span> 2018 Copyright</div>
+                <div class="col-lg-6 col-md-12 text-right"><a href="/en/privacy.html">Privacy Policy</a> | <a
+                        href="/en/sitemap.html">Sitemap</a></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+    <script src="/dist/js/lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+    <!--Dropdown List Select2-->
+    <script src="/servicesResources/js/select2/select2.full.min.js"></script>
+    <script src="/servicesResources/js/select2/ar.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/services.js"></script>
+    <script src="/assets/js/aamir.js"></script>
+    <script src="/servicesResources/js/clamp/clamp.js"></script>
+    <script src="/servicesResources/js/search-page.js"></script>
+    <script>
+        // #region: updating number of selected filters
+        $('input[type="checkbox"]').click(function () {
+            var currentGrp = $(this).attr('name');
+            var numberOfChecked = $('input[name="' + currentGrp + '"]:checked').length;
+            headerNumber = selectFilterHeader(this);
+            headerNumber.text(numberOfChecked);
+        });
+
+        function selectFilterHeader(filter) {
+            return $(filter).parent().parent().parent().parent().prev()
+            .children().children().children().next().children('.number');
+        }
+        // #endregion: updating number of selected filters
+
+        // #region: searching filters
+
+        $('.filter-searchbox > .form-control').keyup(function() {
+            var filterSearchText = $(this).val();
+            var emptyState = $(this).parent().next().next();
+            $(this).parent().next().children('.custom-control').each(function() {
+                if ($(this).children('label').text().indexOf(filterSearchText) == -1)
+                    $(this).hide();
+                else
+                    $(this).show();
+            });
+            var numbOfAllFilters = $(this).parent().next().children('.custom-control.custom-checkbox[style="display: none;"]').length;
+            var numbOfHiddenFilters = $(this).parent().next().children('.custom-control.custom-checkbox').length;
+                if (numbOfAllFilters == numbOfHiddenFilters)
+                    emptyState.show();
+                else
+                    emptyState.hide();
+        });
+        // #endregion: searching filters
+
+        // #region: clear filters
+        $('.clear-filter').click(function() {
+            $('.search-filters .accordion.filter-accordion input[type="checkbox"]').prop('checked', false);
+            $('.search-filters .accordion.filter-accordion .filter-searchbox input').val('');
+            $('.search-filters .accordion.filter-accordion .filter-checkboxes .custom-control.custom-checkbox').show();
+            $('.search-filters .accordion.filter-accordion .card .card-header .number').text('0');
+
+        });
+        // #endregion: clear filters
+    </script>
+</body>
+
+</html>
